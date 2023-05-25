@@ -199,7 +199,10 @@ onload_function = function() {
 
 };
 
-window.onload = onload_function();
+window.onload = function() {
+    onload_function();
+    render_rectangles();
+}
 window.onresize = onload_function;
 window.onfocus = onload_function;
 setInterval(onload_function, 1000);
